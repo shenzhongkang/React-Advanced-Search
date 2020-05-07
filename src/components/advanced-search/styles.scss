@@ -1,0 +1,121 @@
+$search-radius: 8px;
+$search-bgColor: #f1f4f5;
+$search-focusBorder: 1px solid #73afea;
+
+.container {
+  display: flex;
+  :global {
+    /* hide ant popover arrow */
+    .ant-popover-arrow {
+      display: none;
+    }
+    .ant-popover-inner-content {
+      padding: 0;
+    }
+    .ant-checkbox-wrapper {
+      margin-left: 8px;
+    }
+  }
+  /* remove list styles */
+  ul {
+    list-style: none;
+  }
+  .component {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background: $search-bgColor;
+    border-radius: $search-radius;
+    padding: 4px 8px;
+    height: 30px;
+    border: 1px solid $search-bgColor;
+    /* recent searches title */
+    .hisLegend {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 10px;
+      .hisClose {
+        position: absolute;
+        right: 0;
+      }
+    }
+    /* recent searches */
+    .history {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      .hisList {
+        display: flex;
+        flex-direction: column;
+        li {
+          padding: 8px;
+          border-bottom: 1px solid #e5e5e5;
+          &:hover {
+            cursor: pointer;
+            background: #e5e5e5;
+          }
+          &:last-child {
+            margin-top: 10px;
+            border-bottom: none;
+          }
+          &.hisClear {
+            text-align: center;
+          }
+        }
+        p {
+          padding-top: 8px;
+          text-align: center;
+        }
+      }
+    }
+    /* search space */
+    .search {
+      flex: 1;
+      width: calc(100% - 60px);
+      margin-left: 8px;
+      display: flex;
+      align-items: center;
+      border-left: 1px solid #d1d1d1;
+      padding-left: 8px;
+      .searchList {
+        display: flex;
+        overflow-x: auto;
+      }
+      .searchInput {
+        flex: 1;
+        min-width: 100px;
+        height: 24px;
+        border: none;
+        background-color: inherit;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+      .condition, .inputContainer {
+        min-width: 200px;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+      }
+      .condition {
+        li {
+          width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          cursor: pointer;
+          padding: 8px;
+          border-radius: 4px;
+          &:hover {
+            background: #e5e5e5;
+          }
+        }
+      }
+    }
+  }
+}

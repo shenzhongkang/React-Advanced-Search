@@ -1,0 +1,27 @@
+node_modules
+package-lock.json
+
+# 源文件目录
+source
+
+# 测试文件目录
+test
+
+# 忽视文件
+.gitignore
+.npmignore
+
+# babel配置文件
+.babelrc
+
+# eslint配置文件
+.eslintrc.js
+
+# 编辑器配置文件
+.editorconfig
+
+# webpack配置文件
+config
+
+# 源代码
+src
