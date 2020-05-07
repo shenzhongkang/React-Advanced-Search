@@ -1,5 +1,7 @@
 ### Advanced Search
 
+![Demo](https://github.com/ShenZhongkang/React-Advanced-Search/blob/master/demo.png?raw=true)
+
 #### Installation
 > if published.
 ```bash
