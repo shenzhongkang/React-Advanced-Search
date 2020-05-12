@@ -120,4 +120,4 @@ export default View;
 #### Change logs
 | Version | PublishDate | Changes | Remark |
 |---------|-------------|---------|--------|
-| `v 0.0.1` | 2020.05.04 | Initial | Enjoy it! |
+| `v 0.0.1` | 2020.05.04 | Initial | Enjoy it! |
